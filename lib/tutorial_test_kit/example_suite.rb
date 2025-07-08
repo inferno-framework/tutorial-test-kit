@@ -3,7 +3,6 @@ require_relative 'example_suite/patient_group'
 
 module TutorialTestKit
   class ExampleSuite < Inferno::TestSuite
-
     id :tutorial
     title 'Tutorial Test Kit'
     short_title 'Tutorial Test Kit'
