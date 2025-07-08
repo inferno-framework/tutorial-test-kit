@@ -30,7 +30,8 @@ More information about what is included in this repository can be [found here](h
 A list of all Test Kits registered with the Inferno Team can be found on the [Test Kit Registry](https://inferno-framework.github.io/community/test-kits.html) page.
 
 ## License
-Copyright 2025 TODO
+
+Copyright 2025 MITRE
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
