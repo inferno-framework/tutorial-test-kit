@@ -1,5 +1,11 @@
 RSpec.describe TutorialTestKit::PatientGroup do
   let(:suite_id) { 'tutorial' }
+  # Since `PatientGroup` is a `runnable`, `suite_id`
+  # must be defined. Inferno Core will then auto-inject
+  # various RSpec helpers.
+  #
+  # See https://github.com/inferno-framework/inferno-core/blob/main/spec/runnable_context.rb
+
   let(:group) { suite.groups[1] }
   let(:url) { 'http://example.com/fhir' }
   let(:success_outcome) do
@@ -75,7 +81,7 @@ RSpec.describe TutorialTestKit::PatientGroup do
     let(:test) { group.tests.last }
 
     it 'passes if the resource is valid' do
-      stub_request(:post, "#{ENV.fetch('FHIR_RESOURCE_VALIDATOR_URL')}/validate")
+      stub_request(:post, validation_url)
         .with(query: hash_including({}))
         .to_return(status: 200, body: success_outcome.to_json)
 
@@ -93,7 +99,7 @@ RSpec.describe TutorialTestKit::PatientGroup do
     end
 
     it 'fails if the resource is not valid' do
-      stub_request(:post, "#{ENV.fetch('FHIR_RESOURCE_VALIDATOR_URL')}/validate")
+      stub_request(:post, validation_url)
         .with(query: hash_including({}))
         .to_return(status: 200, body: error_outcome.to_json)
 
