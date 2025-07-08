@@ -1,7 +1,17 @@
-# Inferno Template Test Kit
+# Tutorial Test Kit Test Kit
 
-Inferno template [Inferno](https://github.com/inferno-community/inferno-core) Test Kit
+Tutorial test kit [Inferno](https://github.com/inferno-community/inferno-core) Test Kit
 for FHIR testing.
+
+## Getting Started
+
+The quickest way to run this test kit locally is with [Docker](https://www.docker.com/).
+
+- Install Docker
+- Clone this repository, or download an [official release](/releases) if available.
+- Run `./setup.sh` within the test kit directory to download necessary dependencies
+- Run `./run.sh` within the test kit directory to start the application
+- Navigate to `http://localhost`
 
 ## Instructions for Developing Your Test Kit
 
@@ -11,7 +21,6 @@ your development environment and running your Test Kit](https://inferno-framewor
 More information about what is included in this repository can be [found here](https://inferno-framework.github.io/docs/getting-started/repo-layout-and-organization.html).
 
 ## Documentation
-
 - [Inferno documentation](https://inferno-framework.github.io/docs/)
 - [Ruby API documentation](https://inferno-framework.github.io/inferno-core/docs/)
 - [JSON API documentation](https://inferno-framework.github.io/inferno-core/api-docs/)
@@ -21,17 +30,14 @@ More information about what is included in this repository can be [found here](h
 A list of all Test Kits registered with the Inferno Team can be found on the [Test Kit Registry](https://inferno-framework.github.io/community/test-kits.html) page.
 
 ## License
-
-Copyright 2024 The MITRE Corporation
+Copyright 2025 TODO
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
 this file except in compliance with the License. You may obtain a copy of the
 License at
-
 ```
 http://www.apache.org/licenses/LICENSE-2.0
 ```
-
 Unless required by applicable law or agreed to in writing, software distributed
 under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
 CONDITIONS OF ANY KIND, either express or implied. See the License for the

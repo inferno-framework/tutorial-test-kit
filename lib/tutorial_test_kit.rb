@@ -1,0 +1,1 @@
+require_relative 'tutorial_test_kit/example_suite'
